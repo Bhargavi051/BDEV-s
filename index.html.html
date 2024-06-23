@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/icons/cloud-fill"/>
+    <title>B DEV's</title>
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+   <!-- <link rel="stylesheet" href="https://fontawesome.com/icons/envelope?f=classic&s=solid"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css"> -->
+   <!-- <link rel="stylesheet" href="https://fontawesome.com/icons/phone-missed?f=classic&s=solid"> -->
+    <style>
+        *{
+            text-decoration: none;
+            font-style: normal;
+            font-family: inherit;
+            text-align: center;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+
+        }
+    .nav{
+        
+        
+        /* padding-right: 15px;*/
+        padding: 15px; 
+        /*color: white;*/
+
+
+    }
+    .navdiv{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        /* color: white; */
+        
+    }
+    .logo {
+        font-size: 35px;
+        font-weight: 600;
+         color:#2b005c; 
+    }
+    li{
+            list-style: none;
+            display: inline; 
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+            
+    
+        }
+       li  a{
+            color:gray; 
+             
+        }
+        a:hover{
+            color:#d1c0e3;
+            
+            
+        }
+        .login{
+            background-color:transparent;
+            padding: 8px 16px;
+            border-radius: 250px;
+            color:#2b005c;
+            border:1px solid lightgray;
+            font-size: 16px;
+            justify-content: center;
+            font-weight: 600;
+            gap: 8px;
+            
+
+        }
+        .signup{
+            background-color:#2b005c;
+            padding: 8px 16px;
+            border-radius: 250px;
+            color:white;
+            border:none;
+            font-size: 16px;
+            justify-content: center;
+            font-weight: 600;
+            gap: 8px
+
+        }
+        hr{
+            color:#d1c0e3 ;
+            background-color: transparent;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        h2{
+            text-align: center;
+            color:rgb(105, 99, 99);
+            font-size: 24px;
+            font-weight: 500;
+            /* line-height: 32px; */
+            
+        }
+        #get-started {
+            background-color:#2b005c;
+            text-align: center;
+            padding: 10px 16px;
+            border-radius: 250px;
+            color:white;
+            border:none;
+            font-size: 16px;
+            justify-content: center;
+            align-items: center;
+            gap :10px;
+            font-weight: 600;
+            text-decoration: none;
+            top: 90px 90px 90px 90px;
+
+            /* text-align: center; */
+            /* box-sizing: border-box; */
+        }
+        
+        .purple{
+            background-color:#d1c0e3 ;
+            width: 100%;
+            height: 1000px;
+            flex-wrap: wrap;
+            
+            
+        }
+        .Browse{
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 40px;
+            letter-spacing: -.03em;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 40px;
+            position: relative;
+            top:50px;
+            
+        }
+        .serv{
+            width:1384px;
+            height: 400px;
+            gap:24px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            align-items: space-evenly;
+            position:absolute;
+            top: 700px;
+            left:50px;
+            /* flex-wrap: wrap; */
+        }
+        
+        .box-link{
+            text-decoration: none;
+            /* flex-wrap: wrap; */
+        }
+
+       
+        .boxshadow{
+            width:378.67px;
+            height:268px;
+            max-width: 100%;
+            padding: 32px;
+            padding-top: 32px;
+            padding-right: 32px;
+            padding-bottom: 32px;
+            padding-left: 32px;
+            border-radius: 16px 16px;
+            border: none;
+            background-color: #fff;
+            background-position-x :0%;
+            background-position-y :0%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: auto;
+            background-origin: padding-box;
+
+            background-clip: border-box; 
+            transition:background-color .9s ease  ;
+            transition-delay: 0s;
+            text-decoration: none;
+        
+            text-decoration-color: currentColor;
+            text-decoration-style: solid;
+            text-decoration-thickness: auto;
+             /* flex-wrap: wrap;  */
+
+
+        }
+        .boxshadow:hover{
+            box-shadow: 0 4px 8px 0  rgba(0,0,0,0.2),  0 6px 15px 0 rgba(0,0,0,0.20);
+            
+        }
+        i{
+                
+               font-size: 30px;
+               /* border: 1px solid rgb(15, 15, 15); */
+               background-color:white;
+               border-radius: 90%;
+               padding: 20px;
+               color: #2b005c;
+             }
+        
+
+        .text{
+            color: rgb(62, 58, 58);
+            /* text-align: start; */
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -.12px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            flex-wrap: wrap; 
+        }
+        .text:hover{
+            color: #6b429a;
+            flex-wrap: wrap;
+            
+        }
+        .desc{
+            color:rgb(105, 99, 99);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: -.08px;
+        }
+        .footer{
+            background-color:#2b005c;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+        .footlink{
+
+            display: flex;
+            color: white;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .footlink a{
+            color: white;
+            font-size: 10;
+            align-items: space-evenly;
+            justify-content: space-around;
+        }
+        
+       
+</style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="navdiv">
+         <div class="logo"><i class="fa-solid fa-cloud"></i>B<SUB>DEV's</SUB></div>
+         <ul> 
+             
+             <li><a href="devdoc.html">Developer Docs</a></li>
+             <li><a href="FAQ.html">FQs</a></li>
+             <li><a href="login.html" class="login">Log In</a></li>
+             <li><a href="signup.html" class="signup">Sign Up</a></li>
+             
+         </ul>
+ 
+        </div>
+     </nav>
+     <hr>
+     <h1>Explore new ways to communicate using our</h1><h1> simple yet powerful APIs</h1>
+     <h2>Unlock boundless communication possibilities with our intuitive APIs</h2>
+        <h2> simplifying the way you connect and communicate.</h2>
+
+        <a href="Getstarted.html" id="get-started">Get Started</a>
+
+        <div class="purple">
+            <h1 class="Browse">Browse Documentation</h1>
+            <div class="serv">
+                <a class="box-link" href="#">
+                    <div class="boxshadow"><i class="fa-sharp fa-solid fa-comment"></i>
+                        
+                       
+
+                        <div class="text">SMS</div>
+                        <div class="desc">
+                        Explore instant communication withour SMS services for seamless and reliable messaging. 
+                    </div>
+                    </div>
+                </a>
+                <a class="box-link" href="#">
+                    <div class="boxshadow"> <i class="fa-solid fa-comment-dots"></i>
+                        <img class="icons" src="">
+                        <div class="text">RCS</div>
+                        <div class="desc">
+                        RCS multimedia messaging for richer conversation.Elevate your messaging with advanced features for an engaging connection.
+                    </div>
+                    </div>
+                </a>
+                <a class="box-link" href="#">
+                    <div class="boxshadow"><i class="fa-solid fa-envelope"></i>
+                        <img class="icons" src="">
+                        <div class="text">Email</div>
+                        <div class="desc">
+                        Seamless communication through our Email services:Connect,collaborate,and stay organized for an efficient enterprice experience.
+                    </div>
+                    </div>
+                </a>
+                <a class="box-link" href="#">
+                    <div class="boxshadow"><i class="fa-solid fa-microphone"></i>
+                        <img class="icons" src="">
+                        <div class="text">IVRs</div>
+                        <div class="desc">
+                         Enjoy seamless communication through our IVR messaging service.User-centric design ensures easy navigation and clarity,providing streamlined experience.
+                    </div>
+                    </div>
+                </a>
+                <a class="box-link" href="#">
+                    <div class="boxshadow"><i class="fa-solid fa-phone-slash"></i>
+                        <img class="icons" src="">
+                        <div class="text">Missed Call</div>
+                        <div class="desc">
+                        EXplore the ease of our Missed call servies for quick and efficient connectivity.Just ring us, and get the info you need promptly. 
+                    </div>
+                    </div>
+                </a>
+                <a class="box-link" href="#">
+                    <div class="boxshadow"><i class="fa fa-arrow-circle-up"></i>
+
+                        <img class="icons" src="">
+                        <div class="text">OBD</div>
+                        <div class="desc">
+                        Enhance outreach with our Outbound Dialer (OBD) for efficient, targeted communication.
+                    </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footcontent">
+
+                <p>Copyright 2024 B DEV's. All rights reserved.</p>
+
+            
+            <div class="footlink">
+                <h4><a href="#">Regulatory | </a></h4>
+                <h4><a href="#"> Policies | </a></h4>
+                <h4><a href="#">Terms & Conditions</a></h4>
+            </div>
+            </div>
+        </footer>
+        
+
+
+</body>
+</html>

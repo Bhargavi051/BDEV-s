@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV</title>
+    <style>
+
+    *{
+    text-decoration: none;
+        padding:0;
+        margin:0;
+        
+        /* text-align: center; */
+        margin-top: 20px;
+        flex-wrap: wrap;
+        
+        
+        }
+
+    body{
+        background-color:white;
+
+    }
+        .container{
+        animation: dance;
+        animation-duration:4s ;
+        position: relative;
+        animation-iteration-count: infinite;
+        width: 100%;
+        text-align: center;
+        /* transform: translate(-50%,-50%); */
+        /* top:50%;
+        left:50%
+         */
+    }
+    @keyframes dance{
+        0%{
+          color: black;
+          margin-top: -40px;  
+        }
+        30%{
+            letter-spacing: 30px;
+            margin-top: -40px;
+        }
+        85%{
+            letter-spacing: 8px;
+            margin-top: -40px;
+        }
+        100%{
+            margin-top: :20px;
+        }
+    }
+
+   
+         h1{
+            color:#2b005c;
+            background-color:#d1c0e3 ;
+        
+
+        }
+        h1:hover{
+            color:  rgb(117, 66, 169);
+            align-items: center;
+        }
+        h2{
+            color:#2b005c;
+            background-color:#d1c0e3 ;
+            text-shadow: 1px 1px 2px black;
+        
+
+        }
+        h2:hover{
+            color:  rgb(117, 66, 169);
+            align-items: center;
+        }
+
+        h3{
+            color:#2b005c;
+            background-color:#d1c0e3 ;
+            text-shadow: 1px 1px 2px black;
+        
+
+        }
+        h3:hover{
+            color:  rgb(117, 66, 169);
+            align-items: center;
+        }
+
+
+        .navbar-container{
+                display: flex;
+                max-width: 100%;
+                height: 56px;
+                padding:10px 24px;
+                align-items: center;
+                flex-shrink: 0;
+                background-color: #2b005c;
+                z-index: 1000;
+
+            }
+            .logo{
+                color: white;
+                font-weight: bolder;
+                font-size: 30px;
+                text-align: center;
+                width:50px; height: 150px;
+            }
+            @media only screen and(min-width:769px)and (max-width:1024px){
+                .test{
+                    display: none;
+                }
+                .topNav-left-bottom{
+                    display: inline;
+                }
+            }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div>
+        <nav class="navbar-container">
+            <div class="logo">
+                <!-- <img alt="" loading="lazy" width="99" height="38" decoding="async" data-ning="1" style="color: transparent;" src=""> -->
+               <!-- <h1></h1> cx<sub>DEV</sub></h1>
+            </div>
+        </nav> -->
+    </div> 
+    <h1 class="container">Quick Start Guide</h1>
+    <p>The JioCX SMS API is a robust and reliable solution designed to simplify the integration of SMS messaging functionalities into your applications. This developer-friendly API empowers businesses to efficiently communicate with their customers.</p>
+    <p>Send a simple SMS text by defining destination and message text, or experiment with a rich set of features, including bulk sending. During the Testing period, you'll be able to send 1,000 free SMS messages per day</p>
+    <h2>Prerequisites</h2>
+    1. JioCX account is required to send SMS messages. If you don’t have an account, you can create one at http://developer.jiocx.com/ or by clicking on Sign Up button the Top right coroner of this page.<br>
+    2. DLT template with messages for customers.<br>
+    3. A development machine that can run sample code.<br>
+
+    <h3>Step 1:Generate Crendentials</h3>
+    To generate a new API key and secret pair that will be used to authenticate your application with our API.<br>
+
+
+    1.Login into your JioCX Account<br>
+
+    2.Visit Generate Credentials page under Methods section.<br>
+
+    3.Click on the “Generate Credentials” button.<br>
+
+    4.Once clicked, “User Name”, “Password”, “API KEY” and “Auth Token” will be generated in the same page.<br>
+
+    <h3>step 2:Generate Token</h3>
+    Using below CURL, you will be able to generate API TOKEN. You will have to use “API TOKEN”generated in Step 1.
+
+   <h3> Step 3: Send test Message UAT</h3>
+
+    Using below CURL, you will be able to send Messages. You will have to use “API TOKEN” generated in Step 2.<br>
+    
+    <h4>Transactional</h4>
+    
+   <br> Auth token based: To interact with the JioCX API, you need to obtain an access token. You can acquire this token by following the authentication process provided by JioCX. Once obtained, the access token must be included in the Authentication header of your API requests.
+
+   <H3>Next Steps</H3>
+   <br>Now that you are aware on how to send SMS using JioCX and want to experience the full potential without any limitation.
+</body>
+</html>
